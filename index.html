@@ -14,47 +14,102 @@
   </head>
   <body>
     <div class="container">
-      <div class="col-12 pt-5">
+      <div class="col-12 pt-2">
         <h1 class="text-center text-white display-1 heading">
-          Chelsea vs Arsenal
+          <span id="team1"> Chelsea</span> vs <span id="team2">Arsenal</span>
         </h1>
-        <h1 class="text-center text-white fst-italic mt-3 display-4">
-          Score Table
-        </h1>
-        <div class="col-12  text-center mt-2 ">
-          <img src="./images/chelsea.png" alt="" class="fluid w-25" />
-          <h1 class="text-center text-white d-inline-block teams">
-            <span id="chelsea">0</span>
-          </h1>
+        <div class="col-12 text-center mt-2">
+          <button
+            type="button"
+            onclick="changeTeam()"
+            class="btn btn-primary d-inline-block mx-4 mb-3"
+          >
+            Click to change team name
+          </button>
 
-          <h1 class="text-center text-white d-inline-block pe-3 teams">
-            <span id="arsenal">0</span>
-            <img
-              src="./images/arsenal.png"
-              alt=""
-              class="fluid w-25 mx-4 p-2"
-            />
+          <h1
+            class="text-center text-white fst-italic mt-3 display-4 d-inline-block"
+          >
+            Score Table
           </h1>
+          <button
+            type="button"
+            onclick="changeTeam2()"
+            class="btn btn-danger d-inline-block mx-4 mb-3"
+          >
+            Click to change team name
+          </button>
+        </div>
+        <div class="row text-center mt-2">
+          <div class="col-6">
+            <img src="./images/chelsea.png" alt="" class="fluid w-50" />
+            <h1 class="text-center text-white d-inline-block teams">
+              <span id="chelsea">0</span>
+            </h1>
+          </div>
+          <div class="col-6">
+            <h1 class="text-center text-white d-inline-block pe-3 teams">
+              <span id="arsenal">0</span>
+              <img
+                src="./images/arsenal.png"
+                alt=""
+                class="fluid w-25 mx-4 p-2"
+              />
+            </h1>
+          </div>
         </div>
       </div>
-      <div class="row mt-4 justify-content-evenly   ">
-        <div class="col-4  text-center me-auto ps-5 ms-5   ">
-            <button type="button" onclick="decrementScoreChelsea()" class="btn btn-primary ms-5">-</button>
-            <small class="text-white ">score</small>
-            <button type="button" onclick="incrementScoreChelsea()" class="btn btn-primary">+</button>
+      <div class="row mt-4 justify-content-evenly">
+        <div class="col-4 text-center me-auto ps-5 ms-5">
+          <button
+            type="button"
+            onclick="decrementScoreChelsea()"
+            class="btn btn-primary ms-5"
+          >
+            -
+          </button>
+          <small class="text-white">score</small>
+          <button
+            type="button"
+            onclick="incrementScoreChelsea()"
+            class="btn btn-primary"
+          >
+            +
+          </button>
         </div>
-        <div class="col-5   text-start ps-5  ">
-            <button type="button" onclick="decrementScoreArsenal()" class="btn btn-danger">-</button>
-            <small class="text-white ">score</small>
-            <button type="button" onclick="incrementScoreArsenal()" class="btn btn-danger">+</button>
+        <div class="col-5 text-center me-4">
+          <button
+            type="button"
+            onclick="decrementScoreArsenal()"
+            class="btn btn-danger"
+          >
+            -
+          </button>
+          <small class="text-white">score</small>
+          <button
+            type="button"
+            onclick="incrementScoreArsenal()"
+            class="btn btn-danger"
+          >
+            +
+          </button>
+        </div>
+        <div class="row justify-content-center mt-3">
+          <button
+            type="button"
+            onclick="changeScore()"
+            class="btn btn-primary w-25"
+          >
+            Click to change score
+          </button>
         </div>
       </div>
     </div>
 
     <div class="container">
-      <div class="col-12 mt-3">
+      <div class="col-12">
         <div class="table_component" role="region" tabindex="0">
-          <table class="table mt-5 mx-auto">
+          <table class="table mx-auto">
             <caption class="text-white display-5 mb-2">
               MATCH STATS
             </caption>
