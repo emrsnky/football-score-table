@@ -1,0 +1,69 @@
+body{
+    background-image: url(./images/stadium.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.362);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.heading{
+    width: 70% !important; 
+    background: linear-gradient(to right, #1f54f497 30%,#e5a5a5 53%,#f9272794 82%,#f9180499 100%);
+    margin: auto !important;
+}
+
+
+.teams{
+    font-size: 70px !important;
+}
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #e2e2ee;
+    height: 100%;
+    width: 70%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: center;
+}
+
+
+
+.table_component td {
+    border: 1px solid #e2e2ee;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 5px;
+    background-color: #e2e2ee3d;
+    font-weight: bold;
+}
+
+.color1 {
+    background-color: #7b95f261;
+}
+
+.color2{
+    background: #f8969f23;
+}
